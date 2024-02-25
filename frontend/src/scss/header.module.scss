@@ -1,0 +1,34 @@
+@import '_variables.scss';
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: $light;
+    font-family: $main-font;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+    .button {
+        background-color: $dark;
+        color: $primary-color;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background-color: $light;
+        }
+    }    
+    .welcome {
+        color: $dark;
+        font-size: 2rem;
+        margin: 20px 0;
+        font-family: $main-font;
+    }
+}
