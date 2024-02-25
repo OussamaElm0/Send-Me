@@ -45,3 +45,17 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .container {
+        font-size: 1.5rem;
+
+        .row {
+            flex-direction: column;
+
+            .btn {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+}
