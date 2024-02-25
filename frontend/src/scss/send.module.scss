@@ -1,0 +1,59 @@
+@import "_variables.scss";
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    
+    .text {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        background-color: white;
+        color: $dark;
+        border: none;
+        border-radius: 5px;
+        resize: vertical;
+        transition: all 0.3s ease-in-out;
+        width: 50%;
+        height: 200px;
+    }
+    
+
+    .button {
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+    .link {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: $dark;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: white;
+        }
+    
+    }
+}
+
+.code {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: $dark;
+    font-weight: bold;
+    text-align: center;
+    font-family: $main-font;
+}
