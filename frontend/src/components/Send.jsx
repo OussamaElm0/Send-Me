@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 
 export default function Send() {
     const [message, setMessage] = useState('')
-    const [currentCode, setCurrentCode] = useState(false)
+    const [currentCode, setCurrentCode] = useState('')
+    const [status, setStatus] = useState(false)
 
     const generateCode = () => {
         let randomCode = ""
@@ -53,7 +54,7 @@ export default function Send() {
             </Link>
           </button>
         </form>
-        <div className={send.code}>{currentCode && code}</div>
+        <div className={send.code}>{status && code}</div>
       </>
     );
 }
