@@ -10,7 +10,11 @@ export default function Send() {
     const generateCode = () => {
         let randomCode = ""
         for (let i = 0; i < 4; i++) {
-            randomCode += String(Math.floor(Math.random() * 10))
+            if (i == 0) {
+              randomCode += String(Math.round(Math.random() * 8));
+            } else {
+              randomCode += String(Math.floor(Math.random() * 9));
+            }
         }
         setCurrentCode(randomCode)
     }
