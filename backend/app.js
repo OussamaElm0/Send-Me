@@ -5,6 +5,7 @@ const port = process.env.B_PORT || 4000
 const homeRouter = require('./routes/homeRouter')
 require('./config/database')
 
+app.use(express.json())
 app.use('/', homeRouter)
 
 

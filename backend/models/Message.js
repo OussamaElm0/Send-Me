@@ -1,7 +1,10 @@
 const mongoose = require('mongoose')
 
 const messageSchema = mongoose.Schema({
-    code: Number,
+    code: { 
+        type: Number, 
+        unique: true 
+    },
     message: String
 })
 
